@@ -1,4 +1,4 @@
-import { MongoClient ,ObjectId} from 'mongodb';
+import { MongoClient, ObjectId } from 'mongodb';
 import { Fragment } from 'react';
 import Head from 'next/head';
 import MeetupDetail from '../../components/meetups/MeetupDetail';
@@ -9,7 +9,6 @@ const MeetupDetailPage = (props) => {
         <title>{props.meetupData.title}</title>
         <meta name='description' content={props.meetupData.description} />
       </Head>
-      <h1>Meetup Detail</h1>
 
       <MeetupDetail
         image={props.meetupData.image}
